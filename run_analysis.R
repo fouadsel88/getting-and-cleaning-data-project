@@ -1,6 +1,6 @@
 
 
-# uploading all the data
+# reading hre data
 
 y_test<-read.table("y_test.txt" )
 X_test<-read.table("X_test.txt" )
