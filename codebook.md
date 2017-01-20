@@ -71,3 +71,15 @@ WALKING_DOWNSTAIRS: subject was walking downstairs
 SITTING:            subject was sitting
 STANDING:           subject was standing
 LAYING:             subject was laying
+
+# Steps of the cleaning process
+
+1. download end extract the zip file with the raw data.
+2. read raw data use read.table() function
+3. Appropriately labels the data set with descriptive variable names from feature.txt
+4. add subject and activity columns  to test and train data
+5. order data colmuns  starting with subject and activity
+6. merge data test data with train data
+7. Extracts only the measurements on the mean and standard deviation for each measurement.
+8. Uses descriptive activity names to name the activities in the data set
+9. creates a second, independent tidy data set with the average of each variable for each activity and each subject use dplyr package and piplines
