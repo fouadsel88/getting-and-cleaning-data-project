@@ -72,7 +72,7 @@ SITTING:            subject was sitting
 STANDING:           subject was standing
 LAYING:             subject was laying
 
-# Steps of the cleaning process
+# cleaning process
 
 1. download end extract the zip file with the raw data.
 2. read raw data use read.table() function
