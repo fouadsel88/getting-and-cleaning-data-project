@@ -1,4 +1,4 @@
-# Code book for tidy data set
+# Code book 
 # Data source
  A link of the data used in this project [link](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 # Feature Selection 
