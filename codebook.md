@@ -1,4 +1,4 @@
-# Code book 
+# Code book Getting and Cleaning Data Project
 # Data source
  A link of the data used in this project [link](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 # Feature Selection 
