@@ -35,14 +35,14 @@ Mdata<- rbind(X_test,X_train)
 install.packages("dplyr")
 library(dplyr)
 Extractdata<-Mdata%>%
-  select(contains("mean()"),contains("STD"))
+  select( contains("subject"),contains("activity"), contains("mean()"),contains("STD"))
 
 # 3  Uses descriptive activity names to name the activities in the data set
-Mdata$activity<-factor(Mdata$activity,levels = activity_labels$V1, labels = activity_labels$V2)
+Extractdata$activity<-factor(Mdata$activity,levels = activity_labels$V1, labels = activity_labels$V2)
 
 # 5  From the data set in step 4, creates a second, independent tidy data
 #set with the average of each variable for each activity and each subject.
-tidy_data<- Mdata %>%
+tidy_data<- Extractdata %>%
   group_by(activity,subject)%>%
   summarise_each (funs (mean) )%>%
   arrange(subject, activity)
